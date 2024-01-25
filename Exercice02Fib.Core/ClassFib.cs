@@ -4,26 +4,25 @@
     {
         public class Fib
         {
-
-            private int range;
+            private int _range;
 
             public Fib(int r)
             {
-                range = r;
+                _range = r;
             }
 
             public List<int> GetFibSeries()
             {
                 List<int> result = new List<int>();
                 int a = 0, b = 1, c = 0;
-                if (range == 1)
+                if (_range == 1)
                 {
                     result.Add(0);
                     return result;
                 }
                 result.Add(0);
                 result.Add(1);
-                for (int i = 2; i < range; i++)
+                for (int i = 2; i < _range; i++)
                 {
                     c = a + b;
                     result.Add(c);
