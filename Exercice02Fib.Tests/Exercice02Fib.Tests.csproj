@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Exercice02Fib.Core\Exercice02Fib.Core.csproj" />
+  </ItemGroup>
+
 </Project>
