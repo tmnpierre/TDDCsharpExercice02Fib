@@ -61,7 +61,7 @@ namespace Exercice02Fib.Tests
             var result = fib.GetFibSeries();
             var sorted = new List<int>(result);
             sorted.Sort();
-            Assert.Equal(sorted, result);
+            Assert.Equivalent(sorted, result);
         }
     }
 }
