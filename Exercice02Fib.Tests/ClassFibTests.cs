@@ -17,7 +17,8 @@ namespace Exercice02Fib.Tests
         {
             var fib = new ClassFib.Fib(1);
             var result = fib.GetFibSeries();
-            Assert.Collection(result, item => Assert.Equal(0, item));
+            Assert.Single(result);
+            Assert.Equal(0, result[0]);
         }
 
         [Fact]
